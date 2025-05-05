@@ -112,7 +112,14 @@ class HomeView extends GetView<HomeController> {
                                   style: TextButton.styleFrom(
                                     padding: EdgeInsets.only(left: 20),
                                   ),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                     Get.back();
+                                   Future.delayed(Duration.zero, () {
+                                      Get.toNamed(
+                                        Routes.STORAGE,
+                                      );
+                                    });
+                                  },
                                   child: Text(
                                     "Storage",
                                     style: TextStyle(
@@ -151,7 +158,14 @@ class HomeView extends GetView<HomeController> {
                                   style: TextButton.styleFrom(
                                     padding: EdgeInsets.only(left: 20),
                                   ),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                   Get.back();
+                                   Future.delayed(Duration.zero, () {
+                                      Get.toNamed(
+                                        Routes.SETTINGS,
+                                      );
+                                    });
+                                  },
                                   child: Text(
                                     "Settings",
                                     style: TextStyle(
